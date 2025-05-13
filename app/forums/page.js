@@ -1,47 +1,58 @@
 import React from 'react'
 import Image from 'next/image'
+import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
-const topic=[
-    {
-        text: "pythan",
-        img:"/py.png",
-        desc:"lets discuss about python",
-    },
-    {
-        text: "javascript",
-        img:"/js.png",
-        desc:"lets discuss about javascript",
-    },
-    {
-        text: "java",
-        img:"/java.png",
-        desc:"lets discuss about java",
-    },
-    {
-        text: "c",
-        img:"/c++.png",
-        desc:"lets discuss about c",
-    },
-    {
-        text: "c#",
-        img:"/c.png",
-        desc:"lets discuss about c#",
-    },
-    {
-        text: "php",
-        img:"/php.png",
-        desc:"lets discuss about php",
-    },
-    {
-        text: "html",
-        img:"/html.png",
-        desc:"lets discuss about html",
-    },
-    {
-        text: "css",
-        img:"/css.png",
-        desc:"lets discuss about css",
-    },
+const topic = [
+  {
+    text: "pythan",
+    img: "/py.png",
+    desc: "lets discuss about python",
+    slug: "python-disscussion",
+
+  },
+  {
+    text: "javascript",
+    img: "/js.png",
+    desc: "lets discuss about javascript",
+    slug: "javascript-discussion",
+  },
+  {
+    text: "java",
+    img: "/java.png",
+    desc: "lets discuss about java",
+    slug: "java-discussion",
+  },
+  {
+    text: "c",
+    img: "/c++.png",
+    desc: "lets discuss about c",
+    slug: "c-discussion",
+  },
+  {
+    text: "c#",
+    img: "/c.png",
+    desc: "lets discuss about c#",
+    slug: "csharp-discussion",
+  },
+  {
+    text: "php",
+    img: "/php.png",
+    desc: "lets discuss about php",
+    slug: "php-discussion",
+  },
+  {
+    text: "html",
+    img: "/html.png",
+    desc: "lets discuss about html",
+    slug: "html-discussion",
+  },
+  {
+    text: "css",
+    img: "/css.png",
+    desc: "lets discuss about css",
+    slug: "css-discussion",
+  },
 ]
 
 const Forums = () => {
@@ -57,9 +68,11 @@ const Forums = () => {
               <h2 className="text-xl text-black font-semibold">{item.text}</h2>
               <p className="text-black">{item.desc}</p>
             </div>
-            <button className="ml-auto bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              Discuss now
-            </button>
+            <Link href={`/forum/${item.slug}`} className="ml-auto">
+              <Button className="ml-auto px-4 py-2 rounded hover:bg-blue-400">
+                Discuss now
+              </Button>
+            </Link>
           </div>
         ))}
       </div>
