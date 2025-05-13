@@ -1,2 +1,2 @@
 # chat-app
-Friends chating app on some purticular options
+Friends chating app on some perticular options
