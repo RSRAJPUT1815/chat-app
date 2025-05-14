@@ -8,57 +8,57 @@ const topic = [
     text: "pythan",
     img: "/py.png",
     desc: "lets discuss about python",
-    slug: "python-disscussion",
+    slug: "python",
 
   },
   {
     text: "javascript",
     img: "/js.png",
     desc: "lets discuss about javascript",
-    slug: "javascript-discussion",
+    slug: "javascript",
   },
   {
     text: "java",
     img: "/java.png",
     desc: "lets discuss about java",
-    slug: "java-discussion",
+    slug: "java",
   },
   {
     text: "c",
     img: "/c++.png",
     desc: "lets discuss about c",
-    slug: "c-discussion",
+    slug: "c",
   },
   {
     text: "c#",
     img: "/c.png",
     desc: "lets discuss about c#",
-    slug: "csharp-discussion",
+    slug: "csharp",
   },
   {
     text: "php",
     img: "/php.png",
     desc: "lets discuss about php",
-    slug: "php-discussion",
+    slug: "php",
   },
   {
     text: "html",
     img: "/html.png",
     desc: "lets discuss about html",
-    slug: "html-discussion",
+    slug: "html",
   },
   {
     text: "css",
     img: "/css.png",
     desc: "lets discuss about css",
-    slug: "css-discussion",
+    slug: "css",
   },
 ]
 
 const Forums = () => {
   return (
     <div className='container mx-auto bg-white '>
-      <h1 className='text-3xl text-center text-black py-8 text-bold'>Discussion Forums</h1>
+      <h1 className='text-3xl text-center text-black py-8 text-bold'>Discuss Forums</h1>
       <div className='flex flex-col items-center justify-center'>
         {topic.map((item, index) => (
           <div key={index} className="flex items-center w-[450px]  bg-gray-400 text-black shadow-lg rounded-lg p-4 mb-4">
