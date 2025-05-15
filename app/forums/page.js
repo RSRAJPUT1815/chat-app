@@ -5,53 +5,53 @@ import Link from 'next/link'
 
 const topic = [
   {
-    text: "pythan",
+    text: "python",
     img: "/py.png",
     desc: "lets discuss about python",
-    slug: "python",
+    slug: "python-new",
 
   },
   {
     text: "javascript",
     img: "/js.png",
     desc: "lets discuss about javascript",
-    slug: "javascript",
+    slug: "javascript-new",
   },
   {
     text: "java",
     img: "/java.png",
     desc: "lets discuss about java",
-    slug: "java",
+    slug: "java-new",
   },
   {
     text: "c",
     img: "/c++.png",
     desc: "lets discuss about c",
-    slug: "c",
+    slug: "c-new",
   },
   {
     text: "c#",
     img: "/c.png",
     desc: "lets discuss about c#",
-    slug: "csharp",
+    slug: "csharp-new",
   },
   {
     text: "php",
     img: "/php.png",
     desc: "lets discuss about php",
-    slug: "php",
+    slug: "php-new",
   },
   {
     text: "html",
     img: "/html.png",
     desc: "lets discuss about html",
-    slug: "html",
+    slug: "html-new",
   },
   {
     text: "css",
     img: "/css.png",
     desc: "lets discuss about css",
-    slug: "css",
+    slug: "css-new",
   },
 ]
 

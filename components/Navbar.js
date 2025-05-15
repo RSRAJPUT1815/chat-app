@@ -9,7 +9,7 @@ import FriendsChatLogo from './FriendsChatLogo';
 
 const Navbar = () => {
     const { user } = useUser();
-    console.log(user?.id);
+    // console.log(user?.id);
 
 
     const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <div className={`md:flex md:items-center space-x-6 ${isOpen ? 'block' : 'hidden'} md:block`}>
                     <Link href="/" className="text-gray-400 hover:text-blue-600">Home</Link>
                     <Link href="/forums" className="text-gray-400 hover:text-blue-600">Forums</Link>
-                    <Link href="/chatsapp" className="text-gray-400 hover:text-blue-600">UserChat</Link>
+                    <Link href="/chatapp" className="text-gray-400 hover:text-blue-600">UserChat</Link>
                     <Link href="/contact" className="flex items-center justify-center">
                         <UserButton />
                     </Link>
